@@ -22,7 +22,7 @@ def transcribe_audio(file_path, output_dir):
         os.path.basename(file_path))[0] + ".txt")
 
     # Save the transcription
-    with open(output_file_path, "w") as text_file:
+    with open(output_file_path, "w", encoding="utf-8") as text_file:
         text_file.write(text)
 
     print(f"Transcribed: {file_path} -> {output_file_path}")
