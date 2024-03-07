@@ -30,9 +30,9 @@ def transcribe_audio(file_path, output_dir):
 
 def main():
     # Directory containing the MP3 files
-    input_dir = "X:\whisper\input folder"
+    input_dir = r"X:\whisper\input folder"
     # Directory where the text files will be saved
-    output_dir = "X:\whisper\output folder"
+    output_dir = r"X:\whisper\output folder"
 
     # Create the output directory if it doesn't exist
     Path(output_dir).mkdir(parents=True, exist_ok=True)
